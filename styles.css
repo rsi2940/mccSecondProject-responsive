@@ -1,0 +1,74 @@
+/* general rules */
+
+body {
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+
+  color: rgba(0, 0, 0, 0.75);
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.50);
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+}
+section {
+  margin: 2em 1em;
+}
+/* header rules */
+header {
+  margin: 0 0 2em 0;
+}
+header a {
+  font-size: 1.25em;
+  font-weight: bold;
+  display: block;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.50);
+  margin: 0.25em;
+  text-transform: uppercase;
+}
+
+section p {
+  margin: 2em;
+}
+
+/* portfolio rules */
+#portfolio img {
+  margin: 1em 0;
+  width: 100%;
+}
+#portfolio p {
+  margin: 1em;
+}
+
+/* contact rules */
+#contact {
+  padding: 2em;
+}
+#contact a {
+  display: block;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.50);
+  margin: 0.25em;
+}
+
+/* footer rules */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
