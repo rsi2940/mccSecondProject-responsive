@@ -81,7 +81,7 @@ footer a {
   text-transform: uppercase;
 }
 
-/* media queries */
+/* Tablet media query*/
 @media (min-width: 48em) {
   header nav {
     display: flex;
@@ -112,5 +112,17 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+}
+/* Desktop media query */
+@media (min-width: 64em) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+  }
+
+  #portfolio .pfwrapper {
+    flex-basis: calc(33% - 1.79em);
   }
 }
