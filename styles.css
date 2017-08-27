@@ -1,3 +1,7 @@
+/* reset rules */
+* {
+  box-sizing: border-box;
+}
 /* general rules */
 
 body {
@@ -50,6 +54,10 @@ section p {
 #portfolio p {
   margin: 1em;
 }
+.pfwrapper {
+  margin: 1em;
+  width: 90%;
+}
 
 /* contact rules */
 #contact {
@@ -71,4 +79,38 @@ footer {
 footer a {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* media queries */
+@media (min-width: 48em) {
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  header a {
+    padding: 0 2em;
+  }
+
+  #profile-bio {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  #profile-bio div {
+    /* align-self: center; */
+    order: 1;
+  }
+  #profile-bio img {
+    order: 2;
+  }
+
+  .pfwrapper {
+    margin: 1em;
+    flex-basis: calc(50% - 2em);
+  }
+  main div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
