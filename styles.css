@@ -55,7 +55,7 @@ section p {
   margin: 1em;
 }
 .pfwrapper {
-  margin: 1em;
+  margin: 1em 0;
   width: 90%;
 }
 
@@ -124,5 +124,6 @@ footer a {
 
   #portfolio .pfwrapper {
     flex-basis: calc(33% - 1.79em);
+    align-self: baseline;
   }
 }
