@@ -32,8 +32,7 @@ section {
 header {
   margin: 0 0 2em 0;
 }
-header a,
-footer a {
+header a {
   font-size: 1.25em;
   font-weight: bold;
   display: block;
@@ -47,6 +46,11 @@ section p {
   margin: 2em;
 }
 
+footer {
+  border-top: 2px solid #fff;
+  padding-top: 2em;
+}
+
 /* portfolio rules */
 #portfolio img {
   margin: 1em 0;
@@ -56,7 +60,7 @@ section p {
   margin: 1em;
 }
 .pfwrapper {
-  margin: 1em 0;
+  margin: 1em auto;
   width: 90%;
 }
 
@@ -78,9 +82,15 @@ footer {
   align-items: center;
 }
 footer a {
+  /* font-size: 1.25em; */
   font-weight: bold;
+  display: block;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.50);
+  margin: 0.25em;
   text-transform: uppercase;
 }
+
 .large-display {
   display: none;
 }
@@ -122,6 +132,14 @@ footer a {
   }
   .large-display {
     display: inline;
+  }
+  #contact {
+    text-align: center;
+    width: 90%;
+  }
+  #contact div {
+    margin: 0 auto;
+    width: 30%;
   }
 
   footer {
