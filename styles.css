@@ -32,7 +32,8 @@ section {
 header {
   margin: 0 0 2em 0;
 }
-header a {
+header a,
+footer a {
   font-size: 1.25em;
   font-weight: bold;
   display: block;
@@ -80,6 +81,9 @@ footer a {
   font-weight: bold;
   text-transform: uppercase;
 }
+.large-display {
+  display: none;
+}
 
 /* Tablet media query*/
 @media (min-width: 48em) {
@@ -112,6 +116,21 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+  .back-to-top {
+    display: none;
+  }
+  .large-display {
+    display: inline;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+  }
+  footer h2 {
+    margin-left: 1em;
+    text-align: left;
   }
 }
 /* Desktop media query */
